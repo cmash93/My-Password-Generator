@@ -11,4 +11,5 @@
 ## Live Website
 Please feel free to check out a live version of my project [here](https://cmash93.github.io/My-Password-Generator/).     
 ## Mockup    
+* Note: this gif was created before alerts confirming character types were added.
 ![til](https://github.com/cmash93/My-Password-Generator/blob/main/Assets/pw-generator.gif)

@@ -40,18 +40,22 @@ function generatePassword() {
   var passwordInput = []
   
   if (confirmUpper) {
+    alert("You have chosen to include uppercase letters.")
     passwordInput = passwordInput.concat(uppercase)
   }
   
   if (confirmLower) {
+    alert("You have chosen to include lowercase letters.")
     passwordInput = passwordInput.concat(lowercase);
   }
   
   if (confirmNumber) {
+    alert("You have chosen to include numbers.")
     passwordInput = passwordInput.concat(numbers);
   }
   
   if (confirmSymbol) {
+    alert("You have chosen to include special characters.")
     passwordInput = passwordInput.concat(symbols);
   }
   
