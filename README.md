@@ -11,4 +11,4 @@
 ## Live Website
 Please feel free to check out a live version of my project [here](https://cmash93.github.io/My-Password-Generator/).     
 ## Mockup    
-![alt text](./assets/pw-generator.gif "Mockup")
+![til](./assets/pw-generator.gif "Mockup")
