@@ -6,11 +6,11 @@ var symbols = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?","~", "
 
 
 function generatePassword() {
-  var passwordLength = window.prompt("Please choose a password between 8 and 128 characters.");
+  var passwordLength = window.prompt("Please choose a password length between 8 and 128 characters.");
   
   while (passwordLength < 8 || passwordLength > 128) {
     window.alert("You must choose a password between 8 and 128 characters.");
-    generatePassword();
+    var passwordLength = window.prompt("Please choose a password length between 8 and 128 characters.");
   }
   
   var confirmUpper;
@@ -18,16 +18,17 @@ function generatePassword() {
   var confirmNumber;
   var confirmSymbol;
 
+
+
   if (passwordLength >= 8 || passwordLength <= 128) {
     alert("You have chosen " + passwordLength + " characters.");
     var confirmUpper = confirm("Would you like to use uppercase characters?");
     var confirmLower = confirm("Would you like to use lowercase characters?");
     var confirmNumber = confirm("Would you like to use numbers?");
-    var confirmSymbol =confirm("Would you like to use special characters?");
+    var confirmSymbol = confirm("Would you like to use special characters?");
   }
 
-  var passwordInput = []
-
+  
   while (confirmUpper === false && confirmLower === false && confirmNumber === false && confirmSymbol === false) {
     alert("You must choose at least one type of character");
     var confirmUpper = confirm("Would you like to use uppercase characters?");
@@ -36,6 +37,7 @@ function generatePassword() {
     var confirmSymbol =confirm("Would you like to use special characters?");
   }
   
+  var passwordInput = []
   
   if (confirmUpper) {
     passwordInput = passwordInput.concat(uppercase)
